@@ -1,0 +1,23 @@
+<!--Create a button in HTML with id "myButton" and write JavaScript code to add a click event listener to the button that alerts "Button clicked!" when clicked. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Button Click Alert</title>
+</head>
+<body>
+  <button id="myButton">Click Me</button>
+
+  <script>
+
+    document.addEventListener('DOMContentLoaded', function() {
+      const button = document.getElementById('myButton');
+      
+      button.addEventListener('click', function() {
+        alert('Button clicked!');
+      });
+    });
+  </script>
+</body>
+</html>
