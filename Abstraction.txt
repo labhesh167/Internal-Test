@@ -1,0 +1,33 @@
+Question: Describe the concept of abstraction in OOP and provide an example of how it is used in Java.
+
+--> Abstraction in Object-Oriented Programming (OOP) is the concept of hiding the complex details of how something works and showing only the necessary parts. It's like when you drive a car—you just need to know how to operate it, but you don't need to understand how the engine works internally.
+    In programming, abstraction helps simplify code by focusing on what an object does rather than how it does it.
+    In Java, abstraction is often achieved using abstract classes and interfaces.
+
+    Code:
+        abstract class Vehicle 
+        {
+            abstract void start(); 
+
+        void stop() 
+        {
+            System.out.println("Vehicle is stopping");
+        }
+        }
+
+        class Car extends Vehicle {
+        @Override
+        void start() 
+        {
+        System.out.println("Car is starting with key ignition");
+        }
+}
+
+        class Bike extends Vehicle 
+        {
+        @Override
+        void start() 
+        {
+        System.out.println("Bike is starting with electric start");
+        }
+}
